@@ -83,49 +83,37 @@
         <h1>🚨 GAN-Based AI System for Detecting Abuse, Unlawful Activities, and Suspicious Behavior in Surveillance Video Streams</h1>
       
         <p>
-            <b>AbusoGAN</b> is an advanced Artificial Intelligence–based surveillance system designed to automatically
-            detect abuse, unlawful activities, and suspicious behaviors in real-time video streams. With the rapid
-            increase in surveillance cameras across public and private spaces, manual monitoring has become inefficient,
-            error-prone, and resource-intensive. AbusoGAN addresses this challenge by leveraging deep learning techniques
-            to provide intelligent, automated security monitoring. 🧠📹
+            <b>AbusoGAN</b> is an intelligent Artificial Intelligence–based surveillance system developed to automatically detect abuse, unlawful activities, and suspicious behavior from video inputs. With the rapid growth of surveillance systems across public and private environments, manual monitoring has become inefficient, time-consuming, and prone to human error. AbusoGAN addresses this challenge by combining deep learning algorithms with intelligent video analysis to provide automated and reliable security monitoring. The system analyzes uploaded video footage, processes frames, and predicts activity categories to assist security personnel in decision-making. 
         </p>
 
         <h2>🔍 Core Concept</h2>
         <p>
-            The core idea behind AbusoGAN is to analyze visual patterns in video frames and identify abnormal or
-            violent activities such as assault, robbery, vandalism, abuse, explosions, and fighting. Instead of relying
-            solely on predefined rules, the system learns complex patterns directly from data, enabling it to adapt to
-            real-world scenarios with higher accuracy and robustness.
+            The core idea behind AbusoGAN is to analyze visual patterns present in video frames and recognize suspicious or abnormal activities such as assault, robbery, vandalism, abuse, explosions, and fighting. Instead of relying on fixed rule-based detection, the system learns meaningful visual representations from training data using deep learning. This allows the model to generalize effectively and perform reliable activity classification even in complex real-world scenarios.
         </p>
 
         <h2>⚙️ Technologies Used</h2>
         <p>
-            AbusoGAN integrates multiple cutting-edge technologies:
+            AbusoGAN integrates multiple advanced technologies to perform intelligent activity detection.
             <br><br>
-            🔹 <b>Deep Learning & CNNs</b>: Convolutional Neural Networks (CNNs) are used to extract spatial features from video frames. These features capture motion, posture, and interaction cues.
+            🔹 <b>Deep Learning & CNNs</b>: Convolutional Neural Networks are used to extract spatial features from video frames, enabling the system to understand motion patterns, object interactions, and human behavior.
             <br><br>
-            🔹 <b>Generative Adversarial Networks (GANs)</b>: GANs help in modeling normal behavior patterns and detecting anomalies by learning data distributions more effectively.
+            🔹 <b>Generative Adversarial Networks (GANs)</b>: GAN concepts are applied during training to enhance data representation and improve model learning capability.
             <br><br>
-            🔹 <b>PyTorch</b>: Used for building and training the deep learning model due to its flexibility and GPU acceleration.
+            🔹 <b>PyTorch</b>: Used for implementing and running the deep learning model efficiently.
             <br><br>
-            🔹 <b>Flask</b>: A lightweight web framework that provides a user-friendly interface for uploading images, viewing predictions, and managing users.
+            🔹 <b>Flask</b>: Provides a lightweight web interface for uploading videos and viewing predictions.
             <br><br>
-            🔹 <b>SQLite</b>: Used for secure and persistent user authentication and login management.
+            🔹 <b>SQLite</b>: Ensures secure storage and authentication of user login information.
         </p>
 
         <h2>🚀 System Workflow</h2>
         <p>
-            First, video frames are captured or uploaded and preprocessed to match the model’s input size.
-            The trained neural network then analyzes the frames and classifies the activity into predefined categories.
-            Once a suspicious or violent activity is detected, the system displays the detected class along with a
-            description and suggested preventive remedies. This helps security personnel take quick and informed actions.
+            The system workflow begins when a user uploads a video file through the web interface. The video is processed and converted into frames, which are resized and normalized before being analyzed by the trained deep learning model. Each frame is classified individually, and the final prediction is determined using majority voting across all frames. The system then displays the detected activity along with a description and recommended preventive measures, allowing users to quickly understand the situation and take appropriate action.
         </p>
 
         <h2>🛡️ Applications</h2>
         <p>
-            AbusoGAN can be deployed in public surveillance systems, shopping malls, smart cities, transportation hubs,
-            banks, schools, and industrial areas. By enabling early threat detection, it significantly enhances public
-            safety, reduces crime response time, and supports law enforcement agencies. 🚓🏙️
+            AbusoGAN can be deployed in various real-world environments such as public surveillance systems, transportation hubs, shopping malls, smart cities, schools, banks, and industrial facilities. By automatically identifying suspicious activities and abnormal behavior, the system helps improve public safety, enhances monitoring efficiency, and supports security teams in responding quickly to potential threats. 
         </p>
 
         <div class="buttons">
@@ -134,7 +122,7 @@
         </div>
 
         <footer>
-            ©  AbusoGAN 🤖
+            © AbusoGAN 🤖
         </footer>
 
     </div>
