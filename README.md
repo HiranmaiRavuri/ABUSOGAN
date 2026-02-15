@@ -43,16 +43,6 @@ Python • PyTorch • OpenCV • Flask • HTML/CSS • SQLite • GAN • CNN
 
 Abuse, Assault, Fighting, Robbery, Shooting, Explosion, Burglary, Shoplifting, Stealing, Vandalism, Road Accidents, Arrest, Arson, Normal Activity
 
----
-
-## How to Run
-
-```bash
-git clone https://github.com/HiranmaiRavuri/ABUSOGAN.git
-cd ABUSOGAN
-pip install -r requirements.txt
-python check.py
-```
 
 ---
 
