@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AbusoGAN | Sign Up</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(
+                        rgba(0,0,0,0.75),
+                        rgba(0,0,0,0.75)
+                       ),
+                       url("/static/images/signup.jpg") no-repeat center center/cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+        }
+
+        .signup-box {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(12px);
+            padding: 45px 40px;
+            border-radius: 25px;
+            width: 100%;
+            max-width: 440px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #43e97b;
+        }
+
+        p.subtitle {
+            font-size: 14px;
+            margin-bottom: 30px;
+            opacity: 0.85;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group label {
+            font-size: 14px;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .signup-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #43e97b, #38f9d7);
+            color: #003333;
+            border: none;
+            padding: 14px;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            margin-top: 10px;
+            font-weight: 600;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+        }
+
+        .signup-btn:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #38f9d7, #43e97b);
+        }
+
+        .links {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .links a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .home-btn {
+            margin-top: 25px;
+            background: linear-gradient(135deg, #ff512f, #dd2476);
+            color: #fff;
+            border: none;
+            padding: 12px 28px;
+            font-size: 14px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.5);
+        }
+
+        .home-btn:hover {
+            transform: translateY(-2px) scale(1.05);
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 13px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="signup-box">
+        <h2>📝 Sign Up</h2>
+        <p class="subtitle">Create your AbusoGAN account</p>
+
+        <form method="POST">
+            <div class="input-group">
+                <label>👤 Username</label>
+                <input type="text" name="username" placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-group">
+                <label>🔑 Password</label>
+                <input type="password" name="password" placeholder="Create a password" required>
+            </div>
+
+            <button type="submit" class="signup-btn">🚀 Create Account</button>
+        </form>
+
+        <div class="links">
+            <p>✅ Already registered? <a href="/signin">Sign in here</a></p>
+        </div>
+
+        <button class="home-btn" onclick="window.location.href='/'">🏠 Return to Home</button>
+
+        <footer>
+              ©  AbusoGAN 🤖
+        </footer>
+    </div>
+
+</body>
+</html>

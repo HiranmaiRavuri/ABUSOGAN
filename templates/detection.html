@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AbusoGAN | Video Detection</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0; padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(
+                        rgba(0,0,0,0.7),
+                        rgba(0,0,0,0.7)
+                       ),
+                       url("/static/images/detection.png") no-repeat center center/cover;
+            min-height: 100vh;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 34px;
+            color: #00e6e6;
+            margin-bottom: 20px;
+        }
+
+        .upload-box {
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+            margin-bottom: 30px;
+        }
+
+        input[type="file"] {
+            background: #111;
+            color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            width: 100%;
+            max-width: 350px;
+            margin: 15px auto;
+            display: block;
+        }
+
+        .predict-btn {
+            background: linear-gradient(135deg, #ff512f, #dd2476);
+            color: #fff;
+            border: none;
+            padding: 14px 35px;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+        }
+
+        .predict-btn:hover {
+            transform: scale(1.08);
+            background: linear-gradient(135deg, #dd2476, #ff512f);
+        }
+
+        .action-buttons {
+            margin-top: 40px;
+        }
+
+        .action-buttons button {
+            background: linear-gradient(135deg, #00e6e6, #0077ff);
+            color: #fff;
+            border: none;
+            padding: 12px 28px;
+            font-size: 15px;
+            border-radius: 30px;
+            cursor: pointer;
+            margin: 10px;
+            transition: 0.3s ease;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.5);
+        }
+
+        .action-buttons button:hover {
+            transform: translateY(-3px) scale(1.05);
+            background: linear-gradient(135deg, #0077ff, #00e6e6);
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>🎥 AbusoGAN Video Detection System</h2>
+
+        <div class="upload-box">
+            <p>📤 Upload a surveillance <b>video</b> (mp4/avi) for analysis</p>
+
+            <form method="POST" enctype="multipart/form-data">
+                <input type="file" name="video" accept="video/*" required>
+                <br>
+                <button class="predict-btn" type="submit">🚀 Analyze Video</button>
+            </form>
+        </div>
+
+        <div class="action-buttons">
+            <button onclick="window.location.href='/'">🏠 Home</button>
+            <button onclick="window.location.href='/signout'">🚪 Sign Out</button>
+        </div>
+
+        <footer>© AbusoGAN 🤖</footer>
+    </div>
+</body>
+</html>

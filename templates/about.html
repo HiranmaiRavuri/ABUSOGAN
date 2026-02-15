@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AbusoGAN – About</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(
+                        rgba(0,0,0,0.75),
+                        rgba(0,0,0,0.75)
+                       ),
+                       url("/static/images/about.jpg") no-repeat center center/cover;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #00e6e6;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #ffcc00;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        .buttons {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        button {
+            background: linear-gradient(135deg, #00e6e6, #0077ff);
+            color: #fff;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            margin: 10px;
+            transition: 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #0077ff, #00e6e6);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>🚨 GAN-Based AI System for Detecting Abuse, Unlawful Activities, and Suspicious Behavior in Surveillance Video Streams</h1>
+      
+        <p>
+            <b>AbusoGAN</b> is an advanced Artificial Intelligence–based surveillance system designed to automatically
+            detect abuse, unlawful activities, and suspicious behaviors in real-time video streams. With the rapid
+            increase in surveillance cameras across public and private spaces, manual monitoring has become inefficient,
+            error-prone, and resource-intensive. AbusoGAN addresses this challenge by leveraging deep learning techniques
+            to provide intelligent, automated security monitoring. 🧠📹
+        </p>
+
+        <h2>🔍 Core Concept</h2>
+        <p>
+            The core idea behind AbusoGAN is to analyze visual patterns in video frames and identify abnormal or
+            violent activities such as assault, robbery, vandalism, abuse, explosions, and fighting. Instead of relying
+            solely on predefined rules, the system learns complex patterns directly from data, enabling it to adapt to
+            real-world scenarios with higher accuracy and robustness.
+        </p>
+
+        <h2>⚙️ Technologies Used</h2>
+        <p>
+            AbusoGAN integrates multiple cutting-edge technologies:
+            <br><br>
+            🔹 <b>Deep Learning & CNNs</b>: Convolutional Neural Networks (CNNs) are used to extract spatial features from video frames. These features capture motion, posture, and interaction cues.
+            <br><br>
+            🔹 <b>Generative Adversarial Networks (GANs)</b>: GANs help in modeling normal behavior patterns and detecting anomalies by learning data distributions more effectively.
+            <br><br>
+            🔹 <b>PyTorch</b>: Used for building and training the deep learning model due to its flexibility and GPU acceleration.
+            <br><br>
+            🔹 <b>Flask</b>: A lightweight web framework that provides a user-friendly interface for uploading images, viewing predictions, and managing users.
+            <br><br>
+            🔹 <b>SQLite</b>: Used for secure and persistent user authentication and login management.
+        </p>
+
+        <h2>🚀 System Workflow</h2>
+        <p>
+            First, video frames are captured or uploaded and preprocessed to match the model’s input size.
+            The trained neural network then analyzes the frames and classifies the activity into predefined categories.
+            Once a suspicious or violent activity is detected, the system displays the detected class along with a
+            description and suggested preventive remedies. This helps security personnel take quick and informed actions.
+        </p>
+
+        <h2>🛡️ Applications</h2>
+        <p>
+            AbusoGAN can be deployed in public surveillance systems, shopping malls, smart cities, transportation hubs,
+            banks, schools, and industrial areas. By enabling early threat detection, it significantly enhances public
+            safety, reduces crime response time, and supports law enforcement agencies. 🚓🏙️
+        </p>
+
+        <div class="buttons">
+            <button onclick="window.location.href='/'">🏠 Return to Home</button>
+            <button onclick="window.history.back()">⬅ Go Back</button>
+        </div>
+
+        <footer>
+            ©  AbusoGAN 🤖
+        </footer>
+
+    </div>
+</body>
+</html>
