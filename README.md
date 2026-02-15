@@ -62,10 +62,4 @@ To develop an AI-powered surveillance system capable of automatically detecting 
 
 ---
 
-## Author
-
-Hiranmai Ravuri
-
----
-
 **Academic Project — GAN-Assisted CNN-Based Surveillance Detection System**
